@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Case Study</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Suez+One&display=swap" rel="stylesheet"> 
+        
+        <link rel="stylesheet" href="style.css">       
+    </head>
+
+    <body>
+        <center>
+            <div class="col-xs-12 header_div">
+                <h2>CASE STUDY <img src="icon.gif" class="img-thumbnail"> </h2>
+            </div>
+<br><br>
+            <ol>
+                <div class="text_images_and_result">
+                    <li>
+                        <b>Test Image : </b> <img src="Bottle .jpg" class="img-responsive">
+                    </li>
+                    <h3>Output on <b>Microsoft Azure</b>
+                        <span id="azure_output1"></span>
+                    </h3>
+                    <h3>Output on <b>Mobilenet Model</b>
+                        <span id="mobilenet_output1"></span>
+                    </h3>
+
+                    <div class="result">
+                        <h3>Result : </h3>
+                        <hr>
+                        <h4 id="study1"></h4>
+                    </div>
+                </div>
+                <hr>
+                <div class="text_images_and_result">
+                    <li>
+                        <b>Test Image : </b> <img src="spectacles .jpg" class="img-responsive">
+                    </li>
+                    <h3>Output on <b>Microsoft Azure</b>
+                        <span id="azure_output2"></span>
+                    </h3>
+                    <h3>Output on <b>Mobilenet Model</b>
+                        <span id="mobilenet_output2"></span>
+                    </h3>
+
+                    <div class="result">
+                        <h3>Result : </h3>
+                        <hr>
+                        <h4 id="study2"></h4>
+                    </div>
+                </div>
+
+                <div class="text_images_and_result">
+                    <li>
+                        <b>Test Image : </b> <img src="cup.jpg" class="img-responsive">
+                    </li>
+                    <h3>Output on <b>Microsoft Azure</b>
+                        <span id="azure_output3"></span>
+                    </h3>
+                    <h3>Output on <b>Mobilenet Model</b>
+                        <span id="mobilenet_output3"></span>
+                    </h3>
+
+                    <div class="result">
+                        <h3>Result : </h3>
+                        <hr>
+                        <h4 id="study3"></h4>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="text_images_and_result">
+                    <li>
+                        <b>Test Image : </b> <img src="spoon.jpg" class="img-responsive">
+                    </li>
+                    <h3>Output on <b>Microsoft Azure</b>
+                        <span id="azure_output4"></span>
+                    </h3>
+                    <h3>Output on <b>Mobilenet Model</b>
+                        <span id="mobilenet_output4"></span>
+                    </h3>
+
+                    <div class="result">
+                        <h3>Result : </h3>
+                        <hr>
+                        <h4 id="study4"></h4>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="text_images_and_result">
+                    <li>
+                        <b>Test Image : </b> <img src="scale.jpg" class="img-responsive">
+                    </li>
+                    <h3>Output on <b>Microsoft Azure</b>
+                        <span id="azure_output5"></span>
+                    </h3>
+                    <h3>Output on <b>Mobilenet Model</b>
+                        <span id="mobilenet_output5"></span>
+                    </h3>
+
+                    <div class="result">
+                        <h3>Result : </h3>
+                        <hr>
+                        <h4 id="study5"></h4>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="text_images_and_result">
+                    <li>
+                        <b>Test Image : </b> <img src="watch.jpg" class="img-responsive">
+                    </li>
+                    <h3>Output on <b>Microsoft Azure</b>
+                        <span id="azure_output6"></span>
+                    </h3>
+                    <h3>Output on <b>Mobilenet Model</b>
+                        <span id="mobilenet_output6"></span>
+                    </h3>
+
+                    <div class=" result">
+                        <h3>Result : </h3>
+                        <hr>
+                        <h4 id="study6"></h4>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="text_images_and_result">
+                    <li>
+                        <b>Test Image : </b> <img src="bangles.jpg" class="img-responsive">
+                    </li>
+                    <h3>Output on <b>Microsoft Azure</b>
+                        <span id="azure_output7"></span>
+                    </h3>
+                    <h3>Output on <b>Mobilenet Model</b>
+                        <span id="mobilenet_output7"></span>
+                    </h3>
+
+                    <div class="result">
+                        <h3>Result : </h3>
+                        <hr>
+                        <h4 id="study7"></h4>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="text_images_and_result">
+                    <li>
+                        <b>Test Image : </b> <img src="pen.jpg" class="img-responsive">
+                    </li>
+                    <h3>Output on <b>Microsoft Azure</b>
+                        <span id="azure_output8"></span>
+                    </h3>
+                    <h3>Output on <b>Mobilenet Model</b>
+                        <span id="mobilenet_output8"></span>
+                    </h3>
+
+                    <div class="result">
+                        <h3>Result : </h3>
+                        <hr>
+                        <h4 id="study8"></h4>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="text_images_and_result">
+                    <li>
+                        <b>Test Image : </b> <img src="cushion.jpg" class="img-responsive">
+                    </li>
+                    <h3>Output on <b>Microsoft Azure</b>
+                        <span id="azure_output9"></span>
+                    </h3>
+                    <h3>Output on <b>Mobilenet Model</b>
+                        <span id="mobilenet_output9"></span>
+                    </h3>
+
+                    <div class="result">
+                        <h3>Result : </h3>
+                        <hr>
+                        <h4 id="study9"></h4>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="text_images_and_result">
+                    <li>
+                        <b>Test Image : </b> <img src="bag.jpg" class="img-responsive">
+                    </li>
+                    <h3>Output on <b>Microsoft Azure</b>
+                        <span id="azure_output10"></span>
+                    </h3>
+                    <h3>Output on <b>Mobilenet Model</b>
+                        <span id="mobilenet_output10"></span>
+                    </h3>
+
+                    <div class="result">
+                        <h3>Result : </h3>
+                        <hr>
+                        <h4 id="study10"></h4>
+                    </div>
+                </div>
+
+                <hr>
+
+            </ol>
+        </center>
+    </body>
+</html>

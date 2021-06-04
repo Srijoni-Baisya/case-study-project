@@ -1,0 +1,44 @@
+h2{
+    font-family: 'Suez One', serif;
+}
+body{
+    font-family: 'Roboto Slab', serif;
+    background: linear-gradient(rgba(214,242,249,80),rgba(116,227,253,82));
+}
+.text_images_and_result{
+    background-color: lightpink;
+    box-shadow: 5px 10px 30px palevioletred;
+    border: 5px double black;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 30px;
+}
+.text_images_and_result b{
+    font-size: 20px;
+}
+.text_images_and_result span{
+    font-size: 20px;
+}
+.header_div{
+    background: linear-gradient(rgba(214,242,249,80),rgba(116,227,253,82));
+}
+.img-thumbnail{
+    height: 100px;
+    width: 100px;
+}
+.text_images_and_result{
+    width: 50%;
+}
+@media only screen and (max-width: 600px) {
+    .text_images_and_result{
+        width: 90%;
+    }
+  }
+  .result{
+    background-color: blue;
+    border-radius: 10px;
+    color: white;
+    padding: 3px;
+    border: 5px groove;
+    box-shadow: 5px 10px 30px rgb(77, 195, 231);
+}
